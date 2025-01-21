@@ -1,3 +1,3 @@
 # The Challenge App
 
-An app two menus being one the landing page and the other a task list
+An app with two menus being one of them the landing page and the other a task list.
