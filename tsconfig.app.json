@@ -1,13 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist/app",
-    "jsx": "react-jsx", // or "react-jsx" for React 17+
-    "target": "es6",
-    "module": "commonjs",
+    "jsx": "react-jsx",
+    "target": "esnext",
+    "module": "esnext",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "composite": true,
 
     /* Linting */
     "strict": true,

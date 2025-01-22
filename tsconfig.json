@@ -1,34 +1,15 @@
-//{
-//  "compilerOptions": {
-//    "target": "es6",            // or "esnext"
-//    "module": "esnext",        // Use "esnext" or "es6" for module syntax
-//    "outDir": "./dist",        // Output directory for compiled files
-//    "strict": true,
-//    "esModuleInterop": true,
-//    "jsx": "react-jsx",        // Enable JSX support for React
-//    "declaration": true,        // Enable declaration file generation
-//    "composite": true           // Enable composite projects
-//  },
-//  "include": ["src/**/*", "tests/**/*"],
-//  "references": [
-//    { "path": "./tsconfig.app.json" },
-//    { "path": "./tsconfig.node.json" }
-//  ]
-//}
-
-
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "composite": true,
-    "jsx": "react-jsx"
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "tests/**/*"],
+  "include": ["src/**/*"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
