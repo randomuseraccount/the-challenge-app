@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import "./banner.scss";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 interface BannerProperties {
   bannerText: string;
@@ -8,11 +7,22 @@ interface BannerProperties {
 
 const Banner: React.FC<BannerProperties> = ({ bannerText }) => {
   return (
-    <Box className="banner">
-      <Typography variant="h1" className="banner-typography">
-        {bannerText}
-      </Typography>
-    </Box>
+    <AppBar
+      position="fixed"
+      sx={{ zIndex: 1201, alignItems: "center", backgroundColor: "#6373ce" }}
+    >
+      <Toolbar>
+        <Typography
+          variant="h6"
+          noWrap
+          component="div"
+          color="Black"
+          fontWeight="bold"
+        >
+          {bannerText}
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 };
 
