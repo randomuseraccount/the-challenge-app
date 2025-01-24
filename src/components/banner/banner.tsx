@@ -13,7 +13,7 @@ const Banner: React.FC<BannerProperties> = ({ bannerText }) => {
     >
       <Toolbar>
         <Typography
-          variant="h6"
+          variant="h2"
           noWrap
           component="div"
           color="Black"
